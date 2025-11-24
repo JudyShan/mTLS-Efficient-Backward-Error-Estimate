@@ -74,7 +74,7 @@ The algorithms are implemented in files in the `src` folder. The main functions 
 - `sparse_sign.c`: C code for efficient computation of the sparse sign function. The code is directly copied from repository for [Iterative-Sketching-Is-Stable](https://github.com/eepperly/Iterative-Sketching-Is-Stable/blob/main/code/sparsesign.c).
 - `random_tls_problem.m`: function to generate a random TLS problem instance, with specified dimensions and condition number.
 - `solve_tls.m`: naive solution to the multidimensional TLS problem using SVD.
-- `calculate_true_eta.m`: function to compute the true optimal backward error $\eta$ (formula (2.10) in the paper). We also calculate the optimized perturbation matrices $E$ and $F$ as provided by formula (2.13) and (2.14) in the paper, with optimized $M^*$, $N^*$, and $Y^*$ plugged in.
+- `calculate_true_eta.m`: function to compute the true optimal backward error $\eta$ (formula (2.10) in the paper). We also calculate the optimized perturbation matrices $E$ and $F$ as provided by formula (2.13) and (2.14) in the paper, with optimized $M^\*$, $N^\*$, and $Y^\*$ plugged in.
 - `estimate_eta.m`: function to calculate the estimate $\eta$. To be specific,
     + Estimation (not efficient enough) $\tau_{\theta}$ for TLS (formula (3.1)) and $\mu_{\theta}$ for mTLS (formula (3.3)) can be calculated by passing `'estimate'` to the fourth argument of `estimate_eta`.
     + Efficient sketch computation for TLS (provided by Algorithm 3.1) and mTLS (provided by Algorithm 3.2) can be calculated by passing `'sketch'` to the fourth argument of `estimate_eta`.
